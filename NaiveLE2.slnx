@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="BlogDataLibrary/BlogDataLibrary.csproj" />
+  <Project Path="BlogTestUI/BlogTestUI.csproj" />
+  <Project Path="NaiveBlogDB/NaiveBlogDB.sqlproj" Id="15d9bb65-bc16-4459-b366-8c1842859973">
+    <Build />
+    <Deploy />
+  </Project>
+</Solution>
