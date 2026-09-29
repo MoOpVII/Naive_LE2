@@ -1,0 +1,10 @@
+CREATE TABLE [dbo].[Items]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	[Name] NVARCHAR(200) NOT NULL,
+	[Code] NVARCHAR(50) NOT NULL,
+	[Brand] NVARCHAR(100) NULL,
+	[UnitPrice] DECIMAL(18,2) NOT NULL,
+	CONSTRAINT [UQ_Items_Code] UNIQUE ([Code]),
+	CONSTRAINT [CK_Items_UnitPrice_NonNegative] CHECK ([UnitPrice] >= 0)
+)
