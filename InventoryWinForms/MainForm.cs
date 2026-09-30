@@ -80,9 +80,9 @@ namespace InventoryWinForms
 
             txtUsername.PlaceholderText = "Username";
             txtPassword.PlaceholderText = "Password";
-            txtFirstName.PlaceholderText = "First name";
-            txtLastName.PlaceholderText = "Last name";
-            txtSearchCode.PlaceholderText = "Product code";
+            txtFirstName.PlaceholderText = "First Name";
+            txtLastName.PlaceholderText = "Last Name";
+            txtSearchCode.PlaceholderText = "Product Code";
 
             var inputFont = new System.Drawing.Font("Segoe UI", 12F);
             foreach (var input in new[] { txtUsername, txtPassword, txtFirstName, txtLastName, txtSearchCode })
@@ -225,7 +225,7 @@ namespace InventoryWinForms
                 }
                 else if (resp.StatusCode == System.Net.HttpStatusCode.Unauthorized)
                 {
-                    DisplayMessage("Please log in to view inventory.");
+                    DisplayMessage("Login required to view inventory.");
                 }
             }
             catch (Exception ex)
@@ -263,7 +263,7 @@ namespace InventoryWinForms
             }
             else
             {
-                MessageBox.Show("Login failed.");
+                MessageBox.Show("Login failed, try again.");
             }
         }
 
