@@ -4,6 +4,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>NaiveLE2-InventoryAPI-7f2452a5-54d2-4cb8-b2e8-6b62f09d25d4</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

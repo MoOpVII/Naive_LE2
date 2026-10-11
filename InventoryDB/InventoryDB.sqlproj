@@ -63,6 +63,8 @@
   <ItemGroup>
     <Build Include="dbo\Tables\Users.sql" />
     <Build Include="dbo\Tables\Items.sql" />
+    <Build Include="dbo\Tables\Suppliers.sql" />
+    <Build Include="dbo\Tables\InventoryMovements.sql" />
     <Build Include="Stored Proceedures\spUsers_Authenticate.sql" />
     <Build Include="Stored Proceedures\spUsers_Register.sql" />
     <Build Include="Stored Proceedures\spItems_List.sql" />
@@ -70,6 +72,19 @@
     <Build Include="Stored Proceedures\spItems_Add.sql" />
     <Build Include="Stored Proceedures\spItems_UpdatePrice.sql" />
     <Build Include="Stored Proceedures\spItems_Brands.sql" />
+    <Build Include="Stored Proceedures\spItems_GetById.sql" />
+    <Build Include="Stored Proceedures\spItems_Update.sql" />
+    <Build Include="Stored Proceedures\spItems_Retire.sql" />
+    <Build Include="Stored Proceedures\spSuppliers_List.sql" />
+    <Build Include="Stored Proceedures\spSuppliers_GetById.sql" />
+    <Build Include="Stored Proceedures\spSuppliers_Add.sql" />
+    <Build Include="Stored Proceedures\spSuppliers_Update.sql" />
+    <Build Include="Stored Proceedures\spSuppliers_Retire.sql" />
+    <Build Include="Stored Proceedures\spInventory_Receive.sql" />
+    <Build Include="Stored Proceedures\spInventory_Issue.sql" />
+    <Build Include="Stored Proceedures\spInventory_Adjust.sql" />
+    <Build Include="Stored Proceedures\spInventory_ListMovements.sql" />
+    <Build Include="Stored Proceedures\spInventory_Summary.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="InventoryDB.refactorlog" />

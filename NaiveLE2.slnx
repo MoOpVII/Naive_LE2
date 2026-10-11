@@ -2,6 +2,7 @@
   <Project Path="InventoryAPI/InventoryAPI.csproj" Id="7e0bae64-9956-4958-837b-02f960af744c" />
   <Project Path="InventoryDataLibrary/InventoryDataLibrary.csproj" />
   <Project Path="InventoryWinForms/InventoryWinForms.csproj" />
+  <Project Path="InventoryTests/InventoryTests.csproj" />
   <Project Path="InventoryDB/InventoryDB.sqlproj" Id="15d9bb65-bc16-4459-b366-8c1842859973">
     <Build />
     <Deploy />

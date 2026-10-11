@@ -1,0 +1,11 @@
+CREATE TABLE [dbo].[Suppliers]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	[Name] NVARCHAR(200) NOT NULL,
+	[ContactName] NVARCHAR(100) NULL,
+	[Email] NVARCHAR(254) NULL,
+	[Phone] NVARCHAR(30) NULL,
+	[Address] NVARCHAR(500) NULL,
+	[IsActive] BIT NOT NULL CONSTRAINT [DF_Suppliers_IsActive] DEFAULT (1),
+	CONSTRAINT [CK_Suppliers_Name_NotEmpty] CHECK (LEN(LTRIM(RTRIM([Name]))) > 0)
+)
